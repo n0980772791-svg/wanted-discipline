@@ -193,12 +193,6 @@ function App(){
           })
         ),
         // 任務列表
-        // DEBUG 區塊
-        e("div",{style:{background:"#1a1008",border:"1px solid #c09040",borderRadius:8,padding:10,marginBottom:12,fontSize:10,color:"#c09040",wordBreak:"break-all"}},
-          e("div",null,"今日日期: "+todayStr()),
-          e("div",null,"selDate: "+selDate),
-          e("div",null,"logs內容: "+JSON.stringify(logs))
-        ),
         tasks.length===0
           ?e("div",{style:{textAlign:"center",padding:"60px 0",color:"#3a2810"}},e("div",{style:{fontSize:50,marginBottom:12}},"⚓"),e("div",null,"尚無任務，點「新增」開始吧！"))
           :tasks.map(task=>{
